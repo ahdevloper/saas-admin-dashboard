@@ -326,6 +326,17 @@
     else if(state.view==="users") renderUsers("usersTableBody",10);
     else renderAllUsers();
   });
+  const mobileSearchBox=$(".search-box");
+  mobileSearchBox.addEventListener("click",event=>{
+    if(window.innerWidth<=650 && !mobileSearchBox.classList.contains("search-open")) {
+      event.preventDefault();
+      mobileSearchBox.classList.add("search-open");
+      $("#globalSearch").focus();
+    }
+  });
+  document.addEventListener("click",event=>{
+    if(window.innerWidth<=650 && !mobileSearchBox.contains(event.target)) mobileSearchBox.classList.remove("search-open");
+  });
   dynamicView.addEventListener("input",event=>{
     if(event.target.id==="usersSearch") {
       state.query=event.target.value;state.page=1;renderUsers("usersTableBody",10);
