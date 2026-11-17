@@ -1,18 +1,24 @@
 # Project status
 
-## Current release: UI prototype
+## Current release: Local interactive frontend prototype
 
 Implemented:
-- Arabic RTL responsive dashboard shell and navigation.
-- KPI cards and illustrative revenue/subscription charts.
-- Sample users table, text search, select-all, add-user dialog and row removal.
-- CSV export for the current in-memory sample users.
-- Responsive sidebar navigation on smaller screens.
+- Arabic RTL dashboard using the existing visual identity.
+- Navigation between overview, analytics, users, subscriptions, invoices, products, settings and help.
+- Profile page opened from both profile controls.
+- Profile editing and workspace preference forms.
+- Local create, edit and delete actions for demo users and collection records.
+- Browser Local Storage persistence across page reloads on the same browser origin.
+- User search, select-all, pagination and CSV export.
+- Responsive sidebar, mobile overlay, scrollable sidebar on short screens and horizontal table scrolling.
+- Keyboard shortcut Ctrl/Cmd + K for global search.
+- Reduced-motion preference support.
 
-Not implemented:
-- Server-side application, authentication, authorization, persistent database.
-- Real billing, payment gateway, subscription lifecycle or invoice generation.
-- Live analytics, API integration, notifications backend or role management.
+Still not implemented:
+- Backend, shared database, user authentication or authorization.
+- Multi-user synchronization or cross-device data sync.
+- Real billing, payment processing, subscription lifecycle or invoice delivery.
+- Live analytics, production notifications, API integration or server-side validation.
 - Production security hardening and automated browser test suite.
 
-All visible metrics and records are demonstration data. User additions and removals are held in browser memory and reset on reload.
+All initial records and dashboard metrics are demonstration data. Local changes are stored in the current browser's Local Storage and are not sent to a server.
