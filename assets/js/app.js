@@ -53,6 +53,7 @@
     $(".mobile-overlay")?.classList.remove("show");
   }));
   $("#addButton").addEventListener("click", openModal);
+  $(".close-modal").addEventListener("click", () => $("#actionModal").close());
   $("#actionForm").addEventListener("submit", event => {
     if(event.submitter?.value === "cancel") return;
     event.preventDefault();
