@@ -99,7 +99,7 @@
     const target=$("#"+targetId);
     if(!target) return;
     const info=renderUserRows(target,limit);
-    const footer=$("#"+(targetId==="tableBody"?"pagination":"usersPagination"));
+    const footer=targetId==="tableBody"?$(".table-panel .pagination"):$("#usersPagination");
     if(footer) {
       footer.innerHTML="";
       for(let number=1;number<=info.pageCount;number++){
