@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2dba20">
+  <meta name="description" content="لوحة تحكم SaaS عربية لإدارة الأعمال والاشتراكات والمستخدمين.">
+  <title>لوحة التحكم | SaaS Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="الرئيسية">
+        <span class="brand-mark">S</span>
+        <span class="brand-copy"><strong>سحابة</strong><small>SAAS WORKSPACE</small></span>
+      </a>
+      <div class="workspace-switch">
+        <span class="workspace-avatar">A</span>
+        <span class="workspace-name"><strong>Acme Studio</strong><small>مساحة العمل</small></span>
+        <span class="chevron">⌄</span>
+      </div>
+      <nav class="nav-groups" aria-label="القائمة الرئيسية">
+        <p class="nav-label">القائمة الرئيسية</p>
+        <button class="nav-link active" data-view="overview"><span class="nav-icon">▦</span> نظرة عامة</button>
+        <button class="nav-link" data-view="analytics"><span class="nav-icon">▥</span> التحليلات</button>
+        <p class="nav-label nav-label-spaced">إدارة المنصة</p>
+        <button class="nav-link" data-view="users"><span class="nav-icon">♙</span> المستخدمون <span class="nav-count">248</span></button>
+        <button class="nav-link" data-view="subscriptions"><span class="nav-icon">◷</span> الاشتراكات</button>
+        <button class="nav-link" data-view="invoices"><span class="nav-icon">▤</span> الفواتير</button>
+        <button class="nav-link" data-view="products"><span class="nav-icon">◇</span> المنتجات</button>
+        <p class="nav-label nav-label-spaced">النظام</p>
+        <button class="nav-link" data-view="settings"><span class="nav-icon">⚙</span> الإعدادات</button>
+        <button class="nav-link" data-view="help"><span class="nav-icon">?</span> المساعدة والدعم</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="plan-card">
+          <div class="plan-heading"><span>الخطة الحالية</span><span class="plan-status">نشطة</span></div>
+          <strong>Business Plan</strong>
+          <div class="plan-progress"><span></span></div>
+          <small>استخدمت 72% من حدود خطتك</small>
+          <button class="upgrade-btn" data-view="subscriptions">إدارة الاشتراك <span>←</span></button>
+        </div>
+        <button class="profile-mini" id="profileButton">
+          <span class="profile-avatar">AY</span>
+          <span><strong>أحمد ياسين</strong><small>مدير النظام</small></span>
+          <span class="more">•••</span>
+        </button>
+        <div class="copyright">@ahdevloper</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-start">
+          <button class="icon-button mobile-menu" id="menuToggle" aria-label="فتح القائمة">☰</button>
+          <div class="breadcrumb"><span>مساحة العمل</span><b>/</b><strong id="breadcrumbTitle">نظرة عامة</strong></div>
+        </div>
+        <div class="topbar-actions">
+          <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="ابحث عن أي شيء..." aria-label="بحث عام"><kbd>⌘ K</kbd></label>
+          <button class="icon-button notification-button" id="notificationsButton" aria-label="الإشعارات">♧<i></i></button>
+          <span class="topbar-divider"></span>
+          <button class="top-profile" id="topProfile"><span class="profile-avatar small">AY</span><span>أحمد ياسين</span><span class="chevron">⌄</span></button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="page-heading">
+          <div><p class="eyebrow" id="todayLabel">مساء الخير، أحمد</p><h1 id="pageTitle">نظرة عامة</h1><p class="page-subtitle" id="pageSubtitle">إليك ملخص أداء مساحة عملك خلال الفترة الحالية.</p></div>
+          <div class="heading-actions"><button class="button button-outline" id="exportButton"><span>↓</span> تصدير التقرير</button><button class="button button-primary" id="addButton"><span>＋</span> <span id="addButtonText">إضافة مستخدم</span></button></div>
+        </div>
+
+        <div class="filter-row"><div class="date-filter"><span>◷</span><select id="periodSelect" aria-label="الفترة الزمنية"><option value="7">آخر 7 أيام</option><option value="30" selected>آخر 30 يوماً</option><option value="90">آخر 90 يوماً</option></select></div><span class="updated-label"><i></i> تم التحديث قبل دقائق</span></div>
+
+        <div class="stats-grid" id="statsGrid">
+          <article class="stat-card"><div class="stat-top"><span>إجمالي الإيرادات</span><span class="stat-icon green">ر.س</span></div><div class="stat-value" data-stat="revenue">84,250 <small>ر.س</small></div><div class="stat-foot"><span class="trend positive">↗ 12.8%</span><span>مقارنة بالفترة السابقة</span></div><div class="sparkline spark-green"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span>المستخدمون النشطون</span><span class="stat-icon blue">♙</span></div><div class="stat-value" data-stat="users">2,450</div><div class="stat-foot"><span class="trend positive">↗ 8.2%</span><span>مقارنة بالفترة السابقة</span></div><div class="sparkline spark-blue"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span>الاشتراكات النشطة</span><span class="stat-icon purple">◷</span></div><div class="stat-value" data-stat="subscriptions">1,820</div><div class="stat-foot"><span class="trend positive">↗ 5.4%</span><span>مقارنة بالفترة السابقة</span></div><div class="sparkline spark-purple"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span>معدل التحويل</span><span class="stat-icon orange">％</span></div><div class="stat-value" data-stat="conversion">6.84<small>%</small></div><div class="stat-foot"><span class="trend negative">↘ 0.6%</span><span>مقارنة بالفترة السابقة</span></div><div class="sparkline spark-orange"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="panel revenue-panel"><div class="panel-heading"><div><h2>نظرة على الإيرادات</h2><p>متابعة الإيرادات خلال الأشهر الماضية</p></div><button class="select-lite" id="chartMetric">الإيرادات <span>⌄</span></button></div><div class="chart-summary"><strong>84,250 <small>ر.س</small></strong><span class="trend positive">↗ 12.8%</span><small>مقارنة بالشهر الماضي</small></div><div class="chart-wrap"><div class="y-axis"><span>30k</span><span>20k</span><span>10k</span><span>0</span></div><div class="chart-area"><div class="chart-gridlines"><i></i><i></i><i></i><i></i></div><div class="bars" id="revenueBars"><div class="bar-column"><span class="bar-value">12.4k</span><i style="height:42%"></i><small>يناير</small></div><div class="bar-column"><span class="bar-value">16.8k</span><i style="height:57%"></i><small>فبراير</small></div><div class="bar-column"><span class="bar-value">14.2k</span><i style="height:48%"></i><small>مارس</small></div><div class="bar-column"><span class="bar-value">21.5k</span><i style="height:72%"></i><small>أبريل</small></div><div class="bar-column"><span class="bar-value">18.7k</span><i style="height:63%"></i><small>مايو</small></div><div class="bar-column"><span class="bar-value">26.2k</span><i class="bar-current" style="height:88%"></i><small>يونيو</small></div></div></div></div></section>
+          <section class="panel source-panel"><div class="panel-heading"><div><h2>مصادر الاشتراكات</h2><p>توزيع الاشتراكات حسب الخطة</p></div><button class="more-button" aria-label="المزيد">•••</button></div><div class="donut-wrap"><div class="donut"><div class="donut-center"><strong>1,820</strong><small>اشتراك نشط</small></div></div></div><div class="legend"><div><span><i class="dot dot-green"></i> Business</span><strong>48% <small>874</small></strong></div><div><span><i class="dot dot-blue"></i> Professional</span><strong>32% <small>582</small></strong></div><div><span><i class="dot dot-purple"></i> Starter</span><strong>20% <small>364</small></strong></div></div></section>
+        </div>
+
+        <section class="panel table-panel"><div class="panel-heading table-heading"><div><h2 id="tableTitle">أحدث المستخدمين</h2><p id="tableSubtitle">آخر الحسابات التي انضمت إلى منصتك</p></div><div class="table-actions"><label class="table-search"><span>⌕</span><input id="tableSearch" type="search" placeholder="بحث..."></label><button class="button button-outline button-small" id="viewAllButton">عرض الكل <span>←</span></button></div></div><div class="table-scroll"><table><thead id="tableHead"><tr><th><input type="checkbox" aria-label="تحديد الكل" id="selectAll"></th><th>المستخدم</th><th>الخطة</th><th>تاريخ التسجيل</th><th>الحالة</th><th></th></tr></thead><tbody id="tableBody"></tbody></table></div><div class="table-footer"><span id="rowsInfo">عرض 5 من 248 مستخدم</span><div class="pagination"><button disabled aria-label="السابق">→</button><button class="page-active">1</button><button>2</button><button>3</button><span>...</span><button>12</button><button aria-label="التالي">←</button></div></div></section>
+        <footer class="page-footer"><span>© 2026 سحابة. جميع الحقوق محفوظة.</span><span>صنع بواسطة <strong>@ahdevloper</strong></span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+  <dialog class="modal" id="actionModal"><form method="dialog" id="actionForm"><div class="modal-head"><div><p class="eyebrow">إدارة مساحة العمل</p><h2 id="modalTitle">إضافة مستخدم</h2></div><button class="icon-button close-modal" aria-label="إغلاق">×</button></div><div id="modalFields" class="modal-fields"></div><div class="modal-actions"><button class="button button-outline" value="cancel">إلغاء</button><button class="button button-primary" id="modalSubmit" value="default">حفظ البيانات</button></div></form></dialog>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
