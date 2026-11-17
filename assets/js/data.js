@@ -1,10 +1,10 @@
 window.DashboardData = {
   users: [
-    {id:1,name:"سارة العتيبي",email:"sara@example.com",initials:"سع",plan:"Business",date:"2026/06/18",status:"active",tone:""},
-    {id:2,name:"محمد القحطاني",email:"mohammed@example.com",initials:"مح",plan:"Professional",date:"2026/06/17",status:"active",tone:"c2"},
-    {id:3,name:"نورة الحربي",email:"noura@example.com",initials:"نح",plan:"Starter",date:"2026/06/16",status:"pending",tone:"c3"},
-    {id:4,name:"خالد الشهري",email:"khalid@example.com",initials:"خش",plan:"Business",date:"2026/06/15",status:"active",tone:"c4"},
-    {id:5,name:"ريم المطيري",email:"reem@example.com",initials:"رم",plan:"Professional",date:"2026/06/14",status:"cancelled",tone:"c5"}
+    {id:1,name:"سارة العتيبي",email:"sara@example.com",initials:"سع",plan:"Business",date:"2026/11/16",status:"active",tone:""},
+    {id:2,name:"محمد القحطاني",email:"mohammed@example.com",initials:"مح",plan:"Professional",date:"2026/11/15",status:"active",tone:"c2"},
+    {id:3,name:"نورة الحربي",email:"noura@example.com",initials:"نح",plan:"Starter",date:"2026/11/14",status:"pending",tone:"c3"},
+    {id:4,name:"خالد الشهري",email:"khalid@example.com",initials:"خش",plan:"Business",date:"2026/11/13",status:"active",tone:"c4"},
+    {id:5,name:"ريم المطيري",email:"reem@example.com",initials:"رم",plan:"Professional",date:"2026/11/12",status:"cancelled",tone:"c5"}
   ],
   labels: {
     overview:["نظرة عامة","إليك ملخص أداء مساحة عملك خلال الفترة الحالية.","أحدث المستخدمين","آخر الحسابات التي انضمت إلى منصتك","إضافة مستخدم"],
