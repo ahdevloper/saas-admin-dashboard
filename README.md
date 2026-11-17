@@ -1,32 +1,65 @@
+
 # SaaS Admin Dashboard
 
-واجهة لوحة تحكم SaaS عربية (RTL) بهوية بصرية بيضاء مع الأخضر #2dba20 والأزرق #5555ff.
+An Arabic RTL SaaS Admin Dashboard featuring a clean white interface with a modern visual identity built around green `#2dba20` and blue `#5555ff`.
 
 **Owner:** Ahmed Yassin — [@ahdevloper](https://github.com/ahdevloper)
 
-## التشغيل
+[Live Demo](https://ahdevloper.github.io/saas-admin-dashboard/)
 
-افتح `index.html` في متصفح حديث، أو استخدم Live Server في VS Code. لا توجد حزم npm مطلوبة.
 
-## التفاعلات الحالية
 
-- التنقل بين النظرة العامة والتحليلات والمستخدمين والاشتراكات والفواتير والمنتجات والإعدادات والدعم.
-- فتح صفحة الملف الشخصي من زر الحساب في الشريط الجانبي أو الشريط العلوي.
-- تعديل الملف الشخصي وحفظه محلياً.
-- إضافة المستخدمين والسجلات وتعديلها وحذفها.
-- بحث المستخدمين، تحديد الصفوف، والتنقل بين صفحات الجدول.
-- تصدير بيانات المستخدمين الحالية إلى CSV.
-- حفظ إعدادات مساحة العمل وبيانات العرض في `localStorage`.
-- قائمة جانبية قابلة للتمرير على الشاشات القصيرة، وقائمة هاتف قابلة للفتح والإغلاق.
-- تصميم متجاوب للشاشات الكبيرة واللوحية والهواتف.
 
-## التخزين المحلي وحدوده
+<h2 align="center">Dashboard Preview</h2>
 
-تُحفظ التعديلات في `localStorage` داخل المتصفح وعلى نفس نطاق الموقع. لذلك تبقى البيانات بعد إعادة تحميل الصفحة في المتصفح نفسه، لكنها لا تنتقل تلقائياً إلى جهاز آخر أو متصفح آخر، ولا تتم مشاركتها بين المستخدمين. مسح بيانات الموقع من المتصفح قد يحذف هذه البيانات.
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/8f4cf239-a427-4136-8b8f-24e6c61079c4"
+    alt="Dashboard Overview"
+    width="85%"
+  />
+</p>
 
-هذا المشروع ما زال نموذج Frontend تجريبياً. لا يوجد Backend أو قاعدة بيانات مشتركة أو تسجيل دخول أو صلاحيات حقيقية أو بوابة دفع. سجلات الاشتراكات والفواتير ليست معاملات مالية فعلية، ومؤشرات التحليلات توضيحية.
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/fc8a08b4-33c9-419f-8c13-5d7a1b81ae40"
+    alt="Dashboard Interface"
+    width="85%"
+  />
+</p>
 
-## هيكل الملفات
+[Live Demo](https://ahdevloper.github.io/saas-admin-dashboard/)
+
+
+## Getting Started
+
+Open `index.html` in a modern web browser, or use Live Server in VS Code.
+
+No npm packages or build tools are required.
+
+## Current Features
+
+- Navigation between Overview, Analytics, Users, Subscriptions, Invoices, Products, Settings, and Help.
+- Open the Profile page from the account button in the sidebar or top navigation bar.
+- Edit and save profile information locally.
+- Add, edit, and delete users and records.
+- Search users, select table rows, and navigate through table pages.
+- Export current user data to CSV.
+- Save workspace settings and demo data using `localStorage`.
+- Scrollable sidebar on short screens and a collapsible mobile navigation menu.
+- Responsive layout for desktop, tablet, and mobile devices.
+
+## Local Storage and Limitations
+
+Changes are stored in the browser's `localStorage` for the same website origin. Data persists after page reloads in the same browser, but it is not automatically synchronized across different devices or browsers, nor shared between users.
+
+Clearing the website's browser data may permanently remove locally stored information.
+
+This project is currently a frontend demonstration. It does not include a backend, shared database, authentication system, real user permissions, or payment gateway.
+
+Subscription and invoice records are demo data and do not represent actual financial transactions. Analytics metrics are illustrative.
+
+## Project Structure
 
 - `index.html`
 - `assets/css/styles.css`
@@ -34,16 +67,20 @@
 - `assets/js/data.js`
 - `docs/PROJECT-STATUS.md`
 
-## التقنية
+## Technologies
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
 - Browser Local Storage
-- Google Fonts: IBM Plex Sans Arabic (خدمة خط خارجية اختيارية)
+- Google Fonts: IBM Plex Sans Arabic (optional external font service)
 
-## الملكية والترخيص
+## Ownership and Licensing
 
-حقوق ملفات المشروع الأصلية محفوظة لأحمد ياسين @ahdevloper. لا يمنح هذا المستودع إذناً بإعادة الاستخدام أو التوزيع أو البيع دون موافقة خطية من صاحب الحقوق. الخط الخارجي IBM Plex Sans Arabic يخضع لترخيصه المستقل، ولا تنتقل ملكية الخط إلى صاحب المشروع.
+All original project files and source code are the exclusive property of Ahmed Yassin (@ahdevloper).
+
+This repository does not grant permission to reuse, copy, modify, distribute, or sell the project without prior written authorization from the copyright owner.
+
+The external font, IBM Plex Sans Arabic, is subject to its own separate license. Its ownership is not transferred to the project owner.
 
 © 2026 Ahmed Yassin. All rights reserved.
